@@ -89,6 +89,56 @@ main{
     font-size: 1.5rem;
     font-weight: 300;
     color: var(--grey);
-    margin-bottom:  1rem;;
+    margin-bottom:  1rem;
 }
 
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task .content{
+    flex: 1 1 0%;
+}
+
+.task .content .text{
+    color: var(--light);
+    font-size: 1.15rem;
+    width: 100%;
+    display:block;
+    transition: 0.4s;
+}
+
+.task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    font-size: 1.15rem;
+    font-weight:700;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.task .actions button:hover{
+    opacity: 0.6;
+}
+
+.task .actions button:active{
+    opacity: 0.3;
+}
+
+.task .actions .delete{
+    color: maroon;
+}
+
+.no-tasks-found{
+    text-align: center;
+}
